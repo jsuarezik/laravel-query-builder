@@ -54,7 +54,6 @@ class QueryBuilder extends Builder
         $this->request = $request ?? request();
        
         $this->parseSelectedFields();
-    
         if ($this->request->get('sorts')) {
             $this->allowedSorts('*');
         }
