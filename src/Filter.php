@@ -38,7 +38,7 @@ class Filter
     {
         $valueToFilter = $this->resolveValueForFiltering($value);
 
-        if (empty($valueToFilter)) {
+        if (is_null($valueToFilter)) {
             return;
         }
 
